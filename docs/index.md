@@ -1,2 +1,1 @@
-What does this do? What's the roadmap?
-what's it for?
+placeholder - this page will help navigate the docs section
