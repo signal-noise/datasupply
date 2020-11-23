@@ -28,6 +28,8 @@ with a clear list of what you've done (read more about
 [pull requests](http://help.github.com/pull-requests/)). When you send a pull
 request, please make sure you've covered off all the points in the template.
 
+Make sure to [add yourself](https://allcontributors.org/docs/en/bot/usage) to the Contributors list as well.
+
 Please use [Prettier](https://prettier.io/docs/en/index.html) with no overrides, and make sure
 you've read about our workflow (below); in essence make sure each Pull Request
 is atomic but don't worry too much about the commits themselves as we use
