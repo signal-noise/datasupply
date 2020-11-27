@@ -1,7 +1,5 @@
 # Uniform documentation
 
-> Uniform is an opinionated data processing, provision and presentation library of components for Javascript
-
 > !! This document (and most of the content of this folder) is placeholder, here to give some structure. It needs updating once code is written to support it.
 
 ## Functionality
