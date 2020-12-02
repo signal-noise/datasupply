@@ -7,7 +7,7 @@ Using Data Supply in your project is easy; follow this guide for a quick example
 First of all we need Data Supply available to the codebase.
 
 ```js
-npm i @data-supply/core
+npm i @datasupply/core
 ```
 
 ## Add your data
