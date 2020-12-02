@@ -23,7 +23,7 @@ this please submit a PR!
 ## Submitting changes
 
 Please send a
-[GitHub Pull Request to signal-noise/data-supply](https://github.com/signal-noise/data-supply/pull/new/main)
+[GitHub Pull Request to signal-noise/datasupply](https://github.com/signal-noise/datasupply/pull/new/main)
 with a clear list of what you've done (read more about
 [pull requests](http://help.github.com/pull-requests/)). When you send a pull
 request, please make sure you've covered off all the points in the template.
@@ -55,6 +55,6 @@ In effect this means:
 - Your Pull Request title and description become very important; they are the
   history of the main branch and explain all the changes.
 - You ought to be able to find any previous version easily using GitHub tabs, or
-  [Releases](https://github.com/signal-noise/data-supply/releases)
+  [Releases](https://github.com/signal-noise/datasupply/releases)
 
 Thanks!
