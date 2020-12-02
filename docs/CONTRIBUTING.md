@@ -1,13 +1,13 @@
 # How to contribute
 
-We're really happy to see you here, since it means you're using uniform and want to improve it - just like us! While we've been thinking about this library for a long time, we have definitely not considered everything, and we also haven't had time to build out everything we've considered, so help is always appreciated!
+We're really happy to see you here, since it means you're using Data Supply and want to improve it - just like us! While we've been thinking about this library for a long time, we have definitely not considered everything, and we also haven't had time to build out everything we've considered, so help is always appreciated!
 
 As this is early days for the project there's not a lot in the way of
 resources, but please check out the [documentation](./index.md) including the
 [roadmap](./roadmap.md), and also the
-[list of issues](https://github.com/signal-noise/uniform/issues).
+[list of issues](https://github.com/signal-noise/datasupply/issues).
 
-[Signal Noise](https://signalnoise.io) use uniform on lots of our studio work and so we have strong thoughts about what may or may not work as part of the library, but we encourage you to make suggestions, ask questions and generally help us make this suitable for as wide a range of use cases as possible.
+[Signal Noise](https://signalnoise.io) use Data Supply on lots of our studio work and so we have strong thoughts about what may or may not work as part of the library, but we encourage you to make suggestions, ask questions and generally help us make this suitable for as wide a range of use cases as possible.
 
 For now, please submit an issue if you need help with anything. If this takes off we'll
 put more resources in place for support.
@@ -23,7 +23,7 @@ this please submit a PR!
 ## Submitting changes
 
 Please send a
-[GitHub Pull Request to uniform](https://github.com/signal-noise/uniform/pull/new/main)
+[GitHub Pull Request to signal-noise/datasupply](https://github.com/signal-noise/datasupply/pull/new/main)
 with a clear list of what you've done (read more about
 [pull requests](http://help.github.com/pull-requests/)). When you send a pull
 request, please make sure you've covered off all the points in the template.
@@ -55,6 +55,6 @@ In effect this means:
 - Your Pull Request title and description become very important; they are the
   history of the main branch and explain all the changes.
 - You ought to be able to find any previous version easily using GitHub tabs, or
-  [Releases](https://github.com/signal-noise/uniform/releases)
+  [Releases](https://github.com/signal-noise/datasupply/releases)
 
 Thanks!
