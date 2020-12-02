@@ -5,7 +5,7 @@ We're really happy to see you here, since it means you're using Data Supply and 
 As this is early days for the project there's not a lot in the way of
 resources, but please check out the [documentation](./index.md) including the
 [roadmap](./roadmap.md), and also the
-[list of issues](https://github.com/signal-noise/data-supply/issues).
+[list of issues](https://github.com/signal-noise/datasupply/issues).
 
 [Signal Noise](https://signalnoise.io) use Data Supply on lots of our studio work and so we have strong thoughts about what may or may not work as part of the library, but we encourage you to make suggestions, ask questions and generally help us make this suitable for as wide a range of use cases as possible.
 
