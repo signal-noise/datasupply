@@ -2,7 +2,7 @@
 
 ## How it starts
 
-The first release of uniform will have modest aims.
+The first release of Data Supply will have modest aims.
 
 It will be compatible with Next.JS, consume static CSV data, contain basic filters and present data to custom-built React components.
 
