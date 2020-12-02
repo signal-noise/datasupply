@@ -8,7 +8,7 @@
 
 ## Why use Data Supply
 
-The `data-supply` toolset allows you to create a front end Javascript application for data visualisation and manipulation quickly and easily. Using `data-supply` will make it easier to spend time on the presentation of your data, by making predictable decisions in order to get your data from files to components.
+The `datasupply` toolset allows you to create a front end Javascript application for data visualisation and manipulation quickly and easily. Using `datasupply` will make it easier to spend time on the presentation of your data, by making predictable decisions in order to get your data from files to components.
 
 If you use Data Supply on many projects your display components will have more predictable, consistent interfaces, and will therefore be more reusable.
 
@@ -55,7 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://www.marcelkornblum.com"><img src="https://avatars1.githubusercontent.com/u/1162347?v=4" width="100px;" alt=""/><br /><sub><b>Marcel Kornblum</b></sub></a><br /><a href="https://github.com/signal-noise/data-supply/commits?author=marcelkornblum" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.marcelkornblum.com"><img src="https://avatars1.githubusercontent.com/u/1162347?v=4" width="100px;" alt=""/><br /><sub><b>Marcel Kornblum</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=marcelkornblum" title="Documentation">📖</a></td>
   </tr>
 </table>
 
