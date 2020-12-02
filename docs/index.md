@@ -1,4 +1,4 @@
-# Uniform documentation
+# Data Supply documentation
 
 > !! This document (and most of the content of this folder) is placeholder, here to give some structure. It needs updating once code is written to support it.
 

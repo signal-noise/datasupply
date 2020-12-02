@@ -1,2 +1,2 @@
-# Configuring Uniform
+# Configuring Data Supply
 

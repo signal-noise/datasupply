@@ -1,13 +1,13 @@
 # Getting started
 
-Using uniform in your project is easy; follow this guide for a quick example.
+Using Data Supply in your project is easy; follow this guide for a quick example.
 
-## Install Uniform
+## Install Data Supply
 
-First of all we need uniform available to the codebase.
+First of all we need Data Supply available to the codebase.
 
 ```js
-npm i @signal-noise/uniform
+npm i @datasupply/core
 ```
 
 ## Add your data
@@ -33,7 +33,7 @@ Put a table component in somewhere
 
 Connector syntax for sending over data table
 
-## Make sure uniform runs
+## Make sure Data Supply runs
 
 Webpack?
 
