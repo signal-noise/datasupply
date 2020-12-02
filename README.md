@@ -55,7 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://www.marcelkornblum.com"><img src="https://avatars1.githubusercontent.com/u/1162347?v=4" width="100px;" alt=""/><br /><sub><b>Marcel Kornblum</b></sub></a><br /><a href="https://github.com/signal-noise/uniform/commits?author=marcelkornblum" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.marcelkornblum.com"><img src="https://avatars1.githubusercontent.com/u/1162347?v=4" width="100px;" alt=""/><br /><sub><b>Marcel Kornblum</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=marcelkornblum" title="Documentation">📖</a> <a href="#ideas-marcelkornblum" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
