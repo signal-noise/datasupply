@@ -14,6 +14,15 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "tomgp",
+      "name": "Tom Pearson",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/125399?v=4",
+      "profile": "http://www.toffeemilkshake.co.uk",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
