@@ -1,5 +1,7 @@
 # Roadmap
 
+As of right now the project is in the early design stage, and there is no code available. We'll developing it in the open though, so check back.
+
 ## How it starts
 
 The first release of Data Supply will have modest aims.
