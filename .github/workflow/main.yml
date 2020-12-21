@@ -1,6 +1,13 @@
-name: test
+name: Test and Lint
 
-on: [push]
+# Controls when the action will run. 
+on: 
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  
+  workflow_dispatch:
 
 env:
   CI: true
@@ -11,8 +18,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [10, 12]
-        os: [ubuntu-latest, macos-latest]
+        node-version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
       - uses: actions/checkout@v1
@@ -28,8 +35,9 @@ jobs:
       - name: npm install
         run: npm install
 
-      - name: Linting
+      - name: Lint (Linux only)
+        if: matrix.os == 'ubuntu-latest'
         run: npm run lint
 
       - name: Testing
-        run: npm test
+        run: npm test -- --ci
