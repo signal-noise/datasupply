@@ -44,7 +44,7 @@ Data Supply does not make data relational, or know about relational data. It doe
 
 ### What Data Supply may come to do
 
-Please see the roadmap.
+Please see the (roadmap)[./docs/roadmap.md].
 
 ## Contributors ✨
 
