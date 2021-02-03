@@ -23,6 +23,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "chriscamplin",
+      "name": "Chris Camplin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/342953?v=4",
+      "profile": "https://github.com/chriscamplin",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
