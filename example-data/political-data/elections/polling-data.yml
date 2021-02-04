@@ -1,10 +1,10 @@
-Source:String
-Error:Number
-Survey End Date:Date
-  - "%Y-%m-%d"
-CON (%):Number
-LAB (%):Number
-LD (%):Number
-UKIP (%):Number
-Grn (%):Number
-Con Lead:Number
+Source: String
+Error: Number
+Survey End Date: Date
+ - "%Y-%m-%d"
+CON (%): Number
+LAB (%): Number
+LD (%): Number
+UKIP (%): Number
+Grn (%): Number
+Con Lead: Number
