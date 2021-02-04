@@ -1,10 +1,12 @@
+__Title: UK Polling data
 Source: String
 Error: Number
-Survey End Date: Date
+Survey End Date:
+ - Date
  - "%Y-%m-%d"
 CON (%): Number
 LAB (%): Number
 LD (%): Number
 UKIP (%): Number
-Grn (%): Number
+GRN (%): Number
 Con Lead: Number

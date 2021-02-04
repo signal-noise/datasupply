@@ -1,4 +1,3 @@
 import parseDataFiles from "./parse-data-files.js";
 
-parseDataFiles();
-
+const data = parseDataFiles();
