@@ -52,10 +52,10 @@ function parseDataFiles(config = defaultConfig){
     const extension = path.extname(filePath);
     const name = path.basename(filePath, extension);
     dataSets[name] = {};
-
+    
     dataSets[name].data = parser[extension].parse(fs.readFileSync(filePath, 'utf-8'));
     const metadata = seekMetaData(filePath);
-    if(metadata!==undefined) {
+    if(metadata !== undefined) {
       dataSets[name].metadata = metadata
     } 
   });
