@@ -34,7 +34,7 @@ function getFilePaths( roots = ['.'],  fileNameFilter = defaultFileFilter, direc
   if(subDirs.length === 0){ 
     return files;  // if there are no more subdirectories return just the file list
   }else{
-    return [... getFiles(subDirs, fileNameFilter), ... files ]; // return the file list and the results of getFiles on subdirectories 
+    return [... getFilePaths(subDirs, fileNameFilter), ... files ]; // return the file list and the results of getFilePaths on subdirectories 
   }
 }
 

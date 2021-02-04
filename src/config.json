@@ -1,6 +1,8 @@
 {
-  "targetDirectory": ".",
+  "targetDirectories": ["."],
   "excludeDirectories": [".next", "node_modules"],
-  "fileTypes": ["csv", "tsv"],
-  "columnSeparator": "\t "
+  "fileTypes": [
+    {"extension":"csv","delimiter":","},
+    {"extension":"tsv","delimiter":","}
+  ]
 }
