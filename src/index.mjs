@@ -98,7 +98,3 @@ dataFileLookup(targetDirectory, fileTypes);
 // if some CSVS have been found parse them.
 if (!testing || csvsFound.length !== 0)
   createStream(csvsFound, columnSeparator);
-
-// The exports keyword references a global object available in every Node.js module.
-// All functions and objects stored in a module’s exports object are exposed when other Node.js modules import it
-// exports.dataFileLookup = dataFileLookup;
