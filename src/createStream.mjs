@@ -1,7 +1,5 @@
-import fs from "fs";
-
 import csv from "csv-parser";
-
+import fs from "fs";
 import saveJson from "./saveJson.mjs";
 
 const dataSupply = {};
@@ -26,7 +24,7 @@ export default function (csvsFound, separator) {
         .on("end", () => {
           // save to json file, in the data directory
           // next step, to pass this directly to a Redux store or Context
-          saveJson(dataSupply, "./data/processedData.json");
+          saveJson(dataSupply, "src/data/processedData.json");
         });
     } catch (err) {
       console.error(err);

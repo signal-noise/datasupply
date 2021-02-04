@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dataSupply": "node src/index.mjs",
+    "dataSupply": "node --experimental-modules --experimental-json-modules src/index.mjs",
     "test": "jest"
   },
   "repository": {
