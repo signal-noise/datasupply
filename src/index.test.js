@@ -18,9 +18,7 @@ describe("dataFileLookup()", () => {
   });
 
   test("data file found", () => {
-    //fs.existsSync.mockReturnValue(true);
-    // require("fs").existsSync(false);
-    // some test
+    // mock existSync return value, we are not testing 'fs'
     fs.existsSync = () => true;
 
     // create a temporary file system in memory with data/example.csv
@@ -38,6 +36,7 @@ describe("dataFileLookup()", () => {
   });
 
   test("No directories found", () => {
+    // mock existSync return value, we are not testing 'fs'
     fs.existsSync = () => false;
     //fs.existsSync.mockReturnValue(false);
     // require("fs").existsSync(false);
@@ -55,9 +54,9 @@ describe("dataFileLookup()", () => {
   });
 
   test("No files of type csv or tsv found", () => {
-    ////fs.existsSync.mockReturnValue(false);
+    // mock existSync return value, we are not testing 'fs'
     fs.existsSync = () => false;
-    // require("fs").existsSync(false);
+
     require("fs").__setMockFiles(NO_CSV_IN_DATA_DIR_CONFIG);
     const consoleSpy = jest.spyOn(console, "log").mockImplementation();
 

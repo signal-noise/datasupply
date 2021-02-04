@@ -1,7 +1,4 @@
-// npm run dataSupply
-// fs. check directory structure for csv or tsv files
-// if found, pass found csv name to Components
-// write tests, maybe a test runner during setup?
+//@TODO write tests, maybe a test runner during setup?
 
 import config from "./config.json";
 import createStream from "./createStream.mjs";
@@ -66,11 +63,11 @@ function recurseOrPushFoundFile(fileName, filter) {
   }
 }
 
-// dataFileChecker(targetDirectory, fileTypes);
 /**
  * @param {array} filter
  * @param {string} startPath
- * check given directory structure fir
+ * check given directory structure for
+ * provided data file types
  */
 export default function dataFileLookup(
   startPath = ".",
