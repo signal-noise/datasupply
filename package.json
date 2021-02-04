@@ -1,8 +1,9 @@
 {
-  "name": "@signal-noise/datasupply",
-  "version": "1.0.0",
+  "name": "datasupply",
+  "version": "0.0.1",
   "description": "Data Supply is an opinionated data processing, provision and presentation library of components for Javascript",
   "main": "src/index.mjs",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
@@ -12,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dataSupply": "node --experimental-modules --experimental-json-modules src/index.mjs",
+    "dataSupply": "node src/index.mjs",
     "test": "jest"
   },
   "repository": {
