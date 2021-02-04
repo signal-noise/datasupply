@@ -1,6 +1,6 @@
 {
   "targetDirectory": ".",
-  "excludeDirectories": [".next"],
+  "excludeDirectories": [".next", "node_modules"],
   "fileTypes": ["csv", "tsv"],
   "columnSeparator": "\t "
 }
