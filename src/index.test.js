@@ -45,7 +45,6 @@ describe("dataFileLookup()", () => {
 
     require("./index.mjs");
 
-    //console.log(spy.mock.calls);
     expect(consoleSpy.mock.calls).toEqual([
       ["Starting from dir ./"],
       ["no dir ", "."],
@@ -62,7 +61,6 @@ describe("dataFileLookup()", () => {
 
     require("./index.mjs");
 
-    //console.log(spy.mock.calls);
     expect(consoleSpy.mock.calls).toEqual([
       ["Starting from dir ./"],
       ["no dir ", "."],
