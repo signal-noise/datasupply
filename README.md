@@ -3,7 +3,7 @@
 > Data Supply is an opinionated data processing, provision and presentation library of components for Javascript
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Why use Data Supply
@@ -55,13 +55,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://www.marcelkornblum.com"><img src="https://avatars1.githubusercontent.com/u/1162347?v=4" width="100px;" alt=""/><br /><sub><b>Marcel Kornblum</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=marcelkornblum" title="Documentation">📖</a> <a href="#ideas-marcelkornblum" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="http://www.toffeemilkshake.co.uk"><img src="https://avatars3.githubusercontent.com/u/125399?v=4" width="100px;" alt=""/><br /><sub><b>Tom Pearson</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=tomgp" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.marcelkornblum.com"><img src="https://avatars1.githubusercontent.com/u/1162347?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcel Kornblum</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=marcelkornblum" title="Documentation">📖</a> <a href="#ideas-marcelkornblum" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="http://www.toffeemilkshake.co.uk"><img src="https://avatars3.githubusercontent.com/u/125399?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tom Pearson</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=tomgp" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/chriscamplin"><img src="https://avatars.githubusercontent.com/u/342953?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris Camplin</b></sub></a><br /><a href="https://github.com/signal-noise/datasupply/commits?author=chriscamplin" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
