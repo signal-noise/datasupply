@@ -40,7 +40,6 @@ function parseDataFiles(config = defaultConfig){
 
   const dataFileLocations = getFilePaths(targetDirectories, extensionFilter, directoryFilter);
   
-  console.log( dataFileLocations );
   const dataSets = {};
   const parser = {}; 
   fileTypes.forEach(type=>{

@@ -33,7 +33,7 @@ Data Supply consumes data from static file sources such as JSON and CSV files an
 Data Supply looks for a configuration file, and falls back to pragmatic defaults for any options that aren't configured. All the important decisions it takes can be overridden with configuration. All the important format- or framework-specific code it uses is pluggable and can be swapped out.
 
 When Data Supply runs, it:
-  * looks for data files in the project directory and converts them to its internal store using a sensible and performant representation
+  * looks for data files in the project directory and converts them to its internal store using a sensible and representation
   * creates filters that can be easily combined and extended to retrieve slices of data
   * creates components and functions that can be used to connect the data (filtered or not) to the component of your choice
   * uses headings in the data file as column / parameter names for predictable data retrieval
@@ -45,6 +45,18 @@ Data Supply does not make data relational, or know about relational data. It doe
 ### What Data Supply may come to do
 
 Please see the roadmap.
+
+## Usage
+
+### Installation
+Install the package (or if you're developing locally `npm link` it)
+### Command line
+Type `supply`. Starting at the place where you typed `supply` __data-supply__ will visit all  subdirectories find all CSV and TSV (and possibly YAML metadata (c.f. [conventions](docs/conventions.md))) files and convert them to JSON ins the standard array-of-objects format
+
+### API
+#### getFilePaths
+
+#### parseDataFiles
 
 ## Contributors ✨
 

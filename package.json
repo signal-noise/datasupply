@@ -8,6 +8,7 @@
     "doc": "docs"
   },
   "dependencies": {
+    "commander": "^7.0.0",
     "csv-parser": "^3.0.0",
     "d3-dsv": "^2.0.0",
     "yaml": "^1.10.0"
@@ -20,6 +21,9 @@
   "scripts": {
     "dataSupply": "node --experimental-modules --experimental-json-modules src/index.mjs",
     "test": "jest"
+  },
+  "bin": {
+    "supply": "./src/supply-cmd.js"
   },
   "repository": {
     "type": "git",
