@@ -1,8 +1,9 @@
-//@TODO write tests, maybe a test runner during setup?
+//@TODO write more tests, maybe a test runner during setup?
 
 import config from "./config.json";
 import createStream from "./createStream.mjs";
 import fs from "fs";
+import { getFileFromPath } from "./utils.js";
 import path from "path";
 
 const testing = typeof jest !== "undefined";
@@ -26,8 +27,8 @@ excludeDirectories.length !== 0 &&
  * @param {string} fileName
  * @param {array} filters
  */
-function detectFiltersInFileName(fileName, filters) {
-  return filters.some((ext) => fileName.indexOf(ext) >= 0);
+function detectFiltersInFileName(filePath, filters) {
+  return filters.some((ext) => getFileFromPath(filePath).indexOf(ext) >= 0);
 }
 
 /**
