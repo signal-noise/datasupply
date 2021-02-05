@@ -2,7 +2,7 @@
   "name": "datasupply",
   "version": "0.0.1",
   "description": "Data Supply is an opinionated data processing, provision and presentation library of components for Javascript",
-  "main": "src/index.mjs",
+  "main": "src/index.js",
   "type": "module",
   "directories": {
     "doc": "docs"

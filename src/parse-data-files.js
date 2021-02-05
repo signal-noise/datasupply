@@ -10,7 +10,7 @@ import path from "path";
 
 const defaultConfig = {
   excludeDirectories: [".next", "node_modules"],
-  fileTypes: [
+  fileTypes:[
     {"extension": "csv", "delimiter": ","},
     {"extension": "tsv", "delimiter": "\t"}
   ],
@@ -34,8 +34,7 @@ function parseDataFiles(config = defaultConfig){
     targetDirectories
   } = config;
 
-  const directoryFilter = (dirName) => !excludeDirectories
-    .some(dir => dirName === dir);
+  const directoryFilter = (dirName) => !excludeDirectories.some(dir => dirName === dir);
   const extensionFilter = (fileName) => fileTypes
     .some( type => path.extname(fileName) === `.${type.extension}`);
 
@@ -53,10 +52,11 @@ function parseDataFiles(config = defaultConfig){
     const name = path.basename(filePath, extension);
     dataSets[name] = {};
     
-    dataSets[name].data = parser[extension].parse(fs.readFileSync(filePath, 'utf-8'));
+    dataSets[name].data = parser[extension]
+      .parse(fs.readFileSync(filePath, 'utf-8'));
     const metadata = seekMetaData(filePath);
     if(metadata !== undefined) {
-      dataSets[name].metadata = metadata
+      dataSets[name].metadata = metadata;
     } 
   });
 
