@@ -5,11 +5,17 @@
 
 import * as fs from "fs";
 
+import Command from 'commander';
 import parseDataFiles from "./parse-data-files.js";
-const { Command } = require('commander');
-const program = new Command();
-program.version('0.0.1');
 
+// console.log(Command);
+// const program = new Command();
+// program.option('-c, --config <configFileLocation>', 'the location of the Data Supply config file');
+// program.version('0.0.1');
+
+// const options = program.opts();
+
+// console.log(options);
 
 let configPath;
 

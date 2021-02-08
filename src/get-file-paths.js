@@ -9,7 +9,7 @@ import * as path from 'path';
 const defaultFileFilter = () => true; //include everything 
 const defaultDirectoryFilter = (name) => name!='node_modules'; // but not node_modules
 
-function getFilePaths( roots = ['.'],  fileNameFilter = defaultFileFilter, directoryNameFilter = defaultDirectoryFilter){
+function getFilePaths( roots = ['.'], fileNameFilter = defaultFileFilter, directoryNameFilter = defaultDirectoryFilter){
   const files = [];
   const subDirs = [];
   roots.forEach(directory => {
