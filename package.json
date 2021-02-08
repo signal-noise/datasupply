@@ -1,0 +1,38 @@
+{
+  "name": "datasupply",
+  "version": "0.0.1",
+  "description": "Data Supply is an opinionated data processing, provision and presentation library of components for Javascript",
+  "main": "src/index.mjs",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "csv-parser": "^3.0.0",
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dataSupply": "node --experimental-modules --experimental-json-modules src/index.mjs",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signal-noise/datasupply.git"
+  },
+  "keywords": [
+    "data",
+    "datavis",
+    "csv",
+    "parser",
+    "json"
+  ],
+  "author": "signal-noise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/signal-noise/datasupply/issues"
+  },
+  "homepage": "https://github.com/signal-noise/datasupply#readme"
+}
