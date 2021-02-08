@@ -6,6 +6,10 @@
 import * as fs from "fs";
 
 import parseDataFiles from "./parse-data-files.js";
+const { Command } = require('commander');
+const program = new Command();
+program.version('0.0.1');
+
 
 let configPath;
 
@@ -23,5 +27,5 @@ Object.entries(dataSets).forEach(([basename, dataSet]) => {
   const filePath = `./example-data/output/${basename}.json`;
   const fileData = JSON.stringify(dataSet, null, '\t');
   fs.writeFileSync(filePath, fileData);
-  console.warn(`${basename} > to > ${filePath}`);
+  console.warn("\x1b[32m",` - ${basename} => ${filePath}`);
 });
