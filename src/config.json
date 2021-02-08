@@ -1,0 +1,6 @@
+{
+  "targetDirectory": ".",
+  "excludeDirectories": [".next"],
+  "fileTypes": ["csv", "tsv"],
+  "columnSeparator": "\t "
+}
