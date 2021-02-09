@@ -8,7 +8,7 @@
 
 ## Why use Data Supply
 
-The `datasupply` toolset allows you to create a front end Javascript application for data visualisation and manipulation quickly and easily. Using `datasupply` will make it easier to spend time on the presentation of your data, by making predictable decisions in order to get your data from files to components.
+The __data supply__ toolset allows you to create a front end Javascript application for data visualisation and manipulation quickly and easily. Using __data supply__ will make it easier to spend time on the presentation of your data, by making predictable decisions in order to get your data from files to components.
 
 If you use Data Supply on many projects your display components will have more predictable, consistent interfaces, and will therefore be more reusable.
 
@@ -51,11 +51,30 @@ Please see the roadmap.
 ### Installation
 Install the package (or if you're developing locally `npm link` it)
 ### Command line
+__data supply__ provides a CLI.
+
 Type `supply`.
 
-Starting at the place where you typed `supply` __data-supply__ will visit all  subdirectories find all CSV and TSV (and possibly YAML metadata (c.f. [conventions](docs/conventions.md))) files and convert them to JSON in the standard array-of-objects format.
+Starting at the place where you typed `supply` __data supply__ will visit all subdirectories find all CSV and TSV (and possibly YAML metadata files (c.f. [conventions](docs/conventions.md))) and convert them to JSON in the standard array-of-objects format.
 
-By default `supply` will look for a `supply-config.json` file in the location from which it was invoked. If it doesn't find one it reverts to default options...
+```json
+{
+  "data":[
+    {
+      "spreadsheet column 1":"value one",
+      "spreadsheet column 2":"value two",
+      "spreadsheet column 3":"value three"
+    },
+    ...
+  ],
+  "metadata":{
+    ...
+  }
+}
+```
+
+`supply` will look for a `supply-config.json` file in the location from which it was invoked. 
+If it doesn't find one it runs with default options...
 ```json
 {
   "excludeDirectories": [".next", "node_modules"],
@@ -67,7 +86,18 @@ By default `supply` will look for a `supply-config.json` file in the location fr
 }
 ```
 
+To specify your own config file you can type `supply --config ./path/to/my/supply-config.json` 
+
+Paths specified in supply-config files are relative to the location of that file so for example if in the config you set
+```json
+{
+  "targetDirectories":["spreadsheet-stash", "/global-data"]
+}
+```
+then the script will look to source data from `/path/to/the/config-file-directory/spreadsheet-stash`, `/global-data` and all their subdirectories.
+
 ### API
+
 #### getFilePaths
 
 #### parseDataFiles
