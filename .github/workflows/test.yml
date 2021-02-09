@@ -1,12 +1,12 @@
 name: Test and Lint
 
-# Controls when the action will run. 
-on: 
+# Controls when the action will run.
+on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-  
+    branches: [main]
+
   workflow_dispatch:
 
 env:
@@ -35,9 +35,9 @@ jobs:
       - name: npm install
         run: npm install
 
-      - name: Lint (Linux only)
-        if: matrix.os == 'ubuntu-latest'
-        run: npm run lint
+      - name: Lint (Linux/Node v14 only)
+        if: (matrix.os == 'ubuntu-latest') && matrix.node-version == 14
+        run: npm run check
 
       - name: Testing
         run: npm test -- --ci

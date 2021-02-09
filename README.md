@@ -1,10 +1,13 @@
 # Data Supply
 
-> Data Supply is an opinionated data processing, provision and presentation library of components for Javascript
-
+[![NPM version](https://img.shields.io/npm/v/@datasupply/datasupply.svg)](https://www.npmjs.com/package/@datasupply/datasupply) [![Actions Status](https://github.com/signal-noise/datasupply/workflows/Test%20and%20Lint/badge.svg)](https://github.com/signal-noise/datasupply/actions) [![NPM Downloads](https://img.shields.io/npm/dm/@datasupply/datasupply.svg)](https://npmcharts.com/compare/@datasupply/datasupply?minimal=true)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+> Data Supply is an opinionated data processing, provision and presentation library of components for Javascript
 
 ## Why use Data Supply
 
@@ -14,7 +17,7 @@ If you use Data Supply on many projects your display components will have more p
 
 ## What Data Supply is
 
-Data Supply is a set of opinionated libraries and configurations that save time for front end Javascript applications that deal with presenting data sets. 
+Data Supply is a set of opinionated libraries and configurations that save time for front end Javascript applications that deal with presenting data sets.
 
 It is extensible and flexible, and should be usable with any modern browser-based Javascript project regardless of framework, with any file format and with any display component or library.
 
@@ -33,10 +36,11 @@ Data Supply consumes data from static file sources such as JSON and CSV files an
 Data Supply looks for a configuration file, and falls back to pragmatic defaults for any options that aren't configured. All the important decisions it takes can be overridden with configuration. All the important format- or framework-specific code it uses is pluggable and can be swapped out.
 
 When Data Supply runs, it:
-  * looks for data files in the project directory and converts them to its internal store using a sensible and representation
-  * creates filters that can be easily combined and extended to retrieve slices of data
-  * creates components and functions that can be used to connect the data (filtered or not) to the component of your choice
-  * uses headings in the data file as column / parameter names for predictable data retrieval
+
+- looks for data files in the project directory and converts them to its internal store using a sensible and performant representation
+- creates filters that can be easily combined and extended to retrieve slices of data
+- creates components and functions that can be used to connect the data (filtered or not) to the component of your choice
+- uses headings in the data file as column / parameter names for predictable data retrieval
 
 ## What Data Supply does not do
 
@@ -44,7 +48,9 @@ Data Supply does not make data relational, or know about relational data. It doe
 
 ### What Data Supply may come to do
 
-Please see the roadmap.
+Please see the [roadmap](./docs/roadmap.md).
+
+> Read more [documentation](./docs/index.md)
 
 ## Usage
 
