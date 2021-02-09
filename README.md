@@ -4,7 +4,7 @@
 
 > Data Supply is an opinionated data processing, provision and presentation library of components for Javascript
 
-## ❗ Please note this project is under early active development and probably not suitable for use yet.
+> ❗ Please note this project is under early active development and probably not suitable for use yet.
 
 ## Why use Data Supply
 
