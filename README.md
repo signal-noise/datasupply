@@ -56,14 +56,14 @@ Type `supply`.
 Starting at the place where you typed `supply` __data-supply__ will visit all  subdirectories find all CSV and TSV (and possibly YAML metadata (c.f. [conventions](docs/conventions.md))) files and convert them to JSON in the standard array-of-objects format.
 
 By default `supply` will look for a `supply-config.json` file in the location from which it was invoked. If it doesn't find one it reverts to default options...
-```
-const defaultConfig = {
-  excludeDirectories: [".next", "node_modules"],
-  fileTypes:[
+```json
+{
+  "excludeDirectories": [".next", "node_modules"],
+  "fileTypes":[
     {"extension": "csv", "delimiter": ","},
     {"extension": "tsv", "delimiter": "\t"}
   ],
-  targetDirectories: [process.env.PWD]
+  "targetDirectories": ["."]
 }
 ```
 
