@@ -37,7 +37,7 @@ jobs:
 
       - name: Lint (Linux/Node v14 only)
         if: (matrix.os == 'ubuntu-latest') && matrix.node-version == 14
-        run: npm run check
+        run: npm run lint
 
       - name: Testing
         run: npm test -- --ci

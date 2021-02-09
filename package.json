@@ -20,7 +20,7 @@
   "scripts": {
     "supply": "node ./src/supply-cmd.js",
     "test": "jest --passWithNoTests",
-    "lint": ""
+    "lint": "eslint"
   },
   "bin": {
     "supply": "./src/supply-cmd.js"
