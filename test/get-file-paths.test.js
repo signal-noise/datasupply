@@ -1,17 +1,19 @@
 import dataSupply from '../src/index.js';
 
+const fixtureDataPath = './test/example-data';
+
 test('does it find all the files in "example-data"?', () => {
-  const files = dataSupply.getFilePaths(['./example-data']);
+  const files = dataSupply.getFilePaths([fixtureDataPath]);
   expect(files.length).toBe(8);
 });
 
 test('does it find all csv the files in "example-data"?', () => {
-  const files = dataSupply.getFilePaths(['./example-data'], (f)=>f.indexOf(".csv")>1);
+  const files = dataSupply.getFilePaths([fixtureDataPath], (f)=>f.indexOf(".csv")>1);
   expect(files.length).toBe(6);
 });
 
 test('does it find all csv the files in "example-data", exluding those in "political-data"?', () => {
-  const files = dataSupply.getFilePaths(['./example-data'], (f)=>f.indexOf(".csv")>1, (dirName) => dirName != 'political-data');
+  const files = dataSupply.getFilePaths([fixtureDataPath], (f)=>f.indexOf(".csv")>1, (dirName) => dirName != 'political-data');
   expect(files.length).toBe(3);
 });
 
