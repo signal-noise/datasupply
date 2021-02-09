@@ -33,8 +33,8 @@ if(inputConfigPath && fs.existsSync(configPath)){
   console.warn('Data supply - Using default config');
 }
 
-// the config path is relatice to the location of 1. the configuration file or if not then 2. the present working directory
-let outputPath = path.join(path.dirname(configPath), outputPath); 
+// the config path is relative to the location of 1. the configuration file or if not then 2. the present working directory
+outputPath = path.join(path.dirname(configPath), outputPath); 
 
 const dataSets = parseDataFiles(config);
 
