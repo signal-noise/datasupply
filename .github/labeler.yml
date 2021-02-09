@@ -2,7 +2,7 @@
 
 source:
   - src/**/*
-  
+
 # to create package-specific labelling
 #core:
 #  - src/core/*
@@ -11,6 +11,6 @@ source:
 documentation:
   - docs/*
   - docs/**/*
-  
+
 test:
   - src/**/*.spec.js
