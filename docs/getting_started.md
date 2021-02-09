@@ -12,7 +12,7 @@ npm i @datasupply/core
 
 ## Add your data
 
-Grab a flat file of data for your project. We're going to use the [Wikipedia example](https://en.wikipedia.org/wiki/Comma-separated_values#Example): 
+Grab a flat file of data for your project. We're going to use the [Wikipedia example](https://en.wikipedia.org/wiki/Comma-separated_values#Example):
 
 ```csv
 Year,Make,Model,Description,Price

@@ -6,9 +6,11 @@ about: "Is something not working as you expect?"
 <!-- Before creating an issue please make sure you are using the latest version and have checked for duplicate issues. -->
 
 ### Describe the bug
+
 A clear and concise description of what the bug is, including any warning or error messages.
 
 ### To Reproduce
+
 Steps to reproduce the behavior:
 
 <!-- e.g.:
@@ -19,9 +21,11 @@ Steps to reproduce the behavior:
 -->
 
 ### Expected behavior
+
 A clear and concise description of what you expected to happen.
 
 ### Screenshots
+
 If applicable, add screenshots to help explain your problem.
 
 ### Environment Information
