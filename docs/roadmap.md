@@ -1,6 +1,6 @@
 # Roadmap
 
-As of right now the project is in the early design stage, and there is no code available. We'll developing it in the open though, so check back.
+As of right now the project is in the early design stage, and any code on here is very early, untested and liable to change drastically. We'll developing it in the open though, so check back.
 
 ## How it starts
 
