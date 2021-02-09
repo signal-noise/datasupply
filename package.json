@@ -19,7 +19,7 @@
   },
   "scripts": {
     "supply": "node ./src/supply-cmd.js",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "bin": {
     "supply": "./src/supply-cmd.js"
