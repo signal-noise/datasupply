@@ -14,7 +14,7 @@ const defaultConfig = {
     {"extension": "csv", "delimiter": ","},
     {"extension": "tsv", "delimiter": "\t"}
   ],
-  targetDirectories: ["."]
+  targetDirectories: [process.env.PWD]
 }
 
 function seekMetaData(filePath){
@@ -28,6 +28,8 @@ function seekMetaData(filePath){
 }
 
 function parseDataFiles(config = defaultConfig){
+  console.log("CONFIG", config);
+  
   const {
     excludeDirectories,
     fileTypes,
