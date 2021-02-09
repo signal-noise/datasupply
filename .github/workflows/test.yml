@@ -40,4 +40,5 @@ jobs:
         run: npm run lint
 
       - name: Testing
+        if: (matrix.os != 'windows-latest')
         run: npm test -- --ci
