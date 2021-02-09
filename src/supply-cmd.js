@@ -6,22 +6,21 @@
 import * as fs from "fs";
 import * as path from "path";
 
-import Command from 'commander';
+import { Command } from 'commander';
 import parseDataFiles from "./parse-data-files.js";
 
 // console.log(Command);
-// const program = new Command();
-// program.option('-c, --config <configFileLocation>', 'the location of the Data Supply config file');
-// program.version('0.0.1');
+const program = new Command();
+program.option('-c, --config <configFileLocation>', 'the location of the Data Supply config file');
+program.version('0.0.1');
+program.parse(process.argv);
 
-// const options = program.opts();
-
-// console.log(options);
+const options = program.opts();
 
 // files will be read and written relative to the path of the config file if one exists,
 // otherwise relative to the present working directory
 // (the place form which the script was invoked)
-let inputConfigPath = './supply-config.json';
+let inputConfigPath = options.config ? options.config : './supply-config.json';
 let outputConfigPath = '.';
 let configPath = path.join(process.env.PWD, inputConfigPath);
 let config = undefined;
