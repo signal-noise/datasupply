@@ -12,16 +12,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      
+
       - name: Checkout
         uses: actions/checkout@v2
-        
-      # Get the version from the tag and write to package.json if necessary  
+
+      # Get the version from the tag and write to package.json if necessary
       - name: Check package version
         uses: technote-space/package-version-check-action@v1
         with:
           COMMIT_DISABLED: 1
-      
+
       - run: npm install
       - uses: JS-DevTools/npm-publish@v1
         with:
