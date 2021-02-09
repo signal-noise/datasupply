@@ -19,11 +19,14 @@
   },
   "scripts": {
     "supply": "node ./src/supply-cmd.js",
-    "test": "jest --passWithNoTests",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
     "lint": "eslint"
   },
   "bin": {
     "supply": "./src/supply-cmd.js"
+  },
+  "jest":{
+    "transform": {}
   },
   "repository": {
     "type": "git",
