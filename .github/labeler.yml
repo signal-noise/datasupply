@@ -1,0 +1,16 @@
+# read up on the format at https://github.com/actions/labeler
+
+source:
+  - src/**/*
+  
+# to create package-specific labelling
+#core:
+#  - src/core/*
+#  - src/core/**/*
+
+documentation:
+  - docs/*
+  - docs/**/*
+  
+test:
+  - src/**/*.spec.js
