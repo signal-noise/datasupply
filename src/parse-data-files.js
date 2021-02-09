@@ -28,8 +28,6 @@ function seekMetaData(filePath){
 }
 
 function parseDataFiles(config = defaultConfig){
-  console.log("CONFIG", config);
-  
   const {
     excludeDirectories,
     fileTypes,

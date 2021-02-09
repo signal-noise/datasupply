@@ -22,26 +22,27 @@ import parseDataFiles from "./parse-data-files.js";
 // otherwise relative to the present working directory
 // (the place form which the script was invoked)
 let inputConfigPath = './supply-config.json';
-let configPath = path.join(process.env.PWD, inputConfigPath);
 let outputConfigPath = '.';
-let outputPath = path.join(path.dirname(configPath), outputConfigPath);
-
+let configPath = path.join(process.env.PWD, inputConfigPath);
+let config = undefined;
 
 if(inputConfigPath && fs.existsSync(configPath)){
-  config = fs.readFileSync(configPath);
+  config = JSON.parse(fs.readFileSync(configPath));
+  outputConfigPath = config.outputDirectory ? config.outputDirectory : '.';
 }else{
   configPath = undefined;
   console.warn('Data supply - Using default config');
 }
 
-const dataSets = parseDataFiles(configPath);
+// the config path is relatice to the location of 1. the configuration file or if not then 2. the present working directory
+let outputPath = path.join(path.dirname(configPath), outputConfigPath); 
+
+const dataSets = parseDataFiles(config);
 
 Object.entries(dataSets).forEach(([basename, dataSet]) => {
-  // the output directory should be relative to the config filepath
-  console.log('OUTPUT:', outputPath);
   if (!fs.existsSync(outputPath)){
-    console.warn(`creating ${outputPath}`);
-    fs.mkdirSync(outputPath);
+    console.warn(`CREATING ${outputPath}`);
+    fs.mkdirSync(outputPath, { recursive: true });
   }
   const filePath = path.join(outputPath,`${basename}.json`);
   const fileData = JSON.stringify(dataSet, null, '\t');
