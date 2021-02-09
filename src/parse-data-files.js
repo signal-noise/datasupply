@@ -32,7 +32,7 @@ function parseDataFiles(config = defaultConfig){
     excludeDirectories,
     fileTypes,
     targetDirectories
-  } = config;
+  } = Object.assign(defaultConfig, config);
 
   const directoryFilter = (dirName) => !excludeDirectories.some(dir => dirName === dir);
   const extensionFilter = (fileName) => fileTypes

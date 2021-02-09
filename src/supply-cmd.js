@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 // supply-cmd
 // this is a command that allows a user to parse some dataflies based on some supplied config
-// inspiration https://clig.dev/ CLI Guidelines
 
 import * as fs from "fs";
 import * as path from "path";
@@ -9,7 +8,6 @@ import * as path from "path";
 import { Command } from 'commander';
 import parseDataFiles from "./parse-data-files.js";
 
-// console.log(Command);
 const program = new Command();
 program.option('-c, --config <configFileLocation>', 'the location of the Data Supply config file');
 program.version('0.0.1');
@@ -21,20 +19,22 @@ const options = program.opts();
 // otherwise relative to the present working directory
 // (the place form which the script was invoked)
 let inputConfigPath = options.config ? options.config : './supply-config.json';
-let outputConfigPath = '.';
+
+
+let outputPath = '.';
 let configPath = path.join(process.env.PWD, inputConfigPath);
 let config = undefined;
 
 if(inputConfigPath && fs.existsSync(configPath)){
   config = JSON.parse(fs.readFileSync(configPath));
-  outputConfigPath = config.outputDirectory ? config.outputDirectory : '.';
+  outputPath = config.outputDirectory ? config.outputDirectory : '.';
 }else{
   configPath = undefined;
   console.warn('Data supply - Using default config');
 }
 
 // the config path is relatice to the location of 1. the configuration file or if not then 2. the present working directory
-let outputPath = path.join(path.dirname(configPath), outputConfigPath); 
+let outputPath = path.join(path.dirname(configPath), outputPath); 
 
 const dataSets = parseDataFiles(config);
 
