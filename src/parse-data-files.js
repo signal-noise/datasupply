@@ -22,7 +22,7 @@ function seekMetaData(filePath){
     const yml = YAML.parse(fs.readFileSync(metaDataPath,'utf-8'));
     return yml;
   }
-  return undefined;
+  return {};
 }
 
 function parseFileList(fileList, parser){
@@ -43,6 +43,7 @@ function parseFileList(fileList, parser){
     const metadata = seekMetaData(filePath);
     if(metadata !== undefined) {
       dataSets[name].metadata = metadata;
+      dataSets[name].metadata.__retrieved = new Date();
     }
   });
   return dataSets;

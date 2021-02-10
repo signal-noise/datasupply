@@ -34,7 +34,7 @@ Data Supply looks for a configuration file, and falls back to pragmatic defaults
 
 When Data Supply runs, it:
 
-- looks for data files in the project directory and converts them to its internal store using a sensible and performant representation
+- looks for data files in the project directory and converts them to its internal store using a sensible representation
 - creates filters that can be easily combined and extended to retrieve slices of data
 - creates components and functions that can be used to connect the data (filtered or not) to the component of your choice
 - uses headings in the data file as column / parameter names for predictable data retrieval
