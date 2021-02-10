@@ -20,7 +20,6 @@ const options = program.opts();
 // (the place form which the script was invoked)
 let inputConfigPath = options.config ? options.config : './supply-config.json';
 
-
 let outputPath = '.';
 let configPath = path.join(process.env.PWD, inputConfigPath);
 let config = undefined;

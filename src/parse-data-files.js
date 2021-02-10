@@ -1,11 +1,9 @@
 // parseDataFiles: loads a bunch of delimiter separated files from a set of directories and 
 // their subdirectories based on a config object. Those loaded files are
 
-import * as dsv from "d3-dsv";
-
 import YAML from "yaml";
 import fs from "fs";
-import getFilePaths from "./get-file-paths.js";
+import { parseConfig } from "./parse-config.js";
 import path from "path";
 
 const defaultConfig = {
@@ -27,39 +25,34 @@ function seekMetaData(filePath){
   return undefined;
 }
 
-function parseDataFiles(config = defaultConfig){
-  const {
-    excludeDirectories,
-    fileTypes,
-    targetDirectories
-  } = Object.assign(defaultConfig, config);
-
-  const directoryFilter = (dirName) => !excludeDirectories.some(dir => dirName === dir);
-  const extensionFilter = (fileName) => fileTypes
-    .some( type => path.extname(fileName) === `.${type.extension}`);
-
-  const dataFileLocations = getFilePaths(targetDirectories, extensionFilter, directoryFilter);
-  
+function parseFileList(fileList, parser){
   const dataSets = {};
-  const parser = {}; 
-  fileTypes.forEach(type=>{
-    parser[`.${type.extension}`] = dsv.dsvFormat(type.delimiter);
-  });
-  
-  dataFileLocations.forEach(filePath => {
+  fileList.forEach(filePath => {
     const extension = path.extname(filePath);
-    const name = path.basename(filePath, extension);
+    let name = path.basename(filePath, extension);
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    if(dataSets[name] !== undefined){
+      console.warn(`\x1b[31mWARNING Duplicate dataset name "${name}" from ${filePath} will become "${name}_"`);
+      console.warn(`  you may want to rename your source files and re-run to avoid confusion`);
+      name = `${name}_`;
+    }
     dataSets[name] = {};
-    
+
     dataSets[name].data = parser[extension]
-      .parse(fs.readFileSync(filePath, 'utf-8'));
+      .parse(fileContent);
     const metadata = seekMetaData(filePath);
     if(metadata !== undefined) {
       dataSets[name].metadata = metadata;
-    } 
+    }
   });
-
   return dataSets;
 }
 
-export default parseDataFiles;
+export default function parseDataFiles(config = defaultConfig){
+  const {
+    fileLocations,
+    parsers
+  } = parseConfig(Object.assign(defaultConfig, config))
+  
+  return parseFileList(fileLocations, parsers);
+};

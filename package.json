@@ -25,7 +25,7 @@
   "bin": {
     "supply": "./src/supply-cmd.js"
   },
-  "jest":{
+  "jest": {
     "transform": {}
   },
   "repository": {
