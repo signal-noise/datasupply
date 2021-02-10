@@ -6,19 +6,24 @@ on:
 
 jobs:
   build:
-    name: Publish to NPM packages
+    name: Publish NPM packages
     runs-on: ubuntu-latest
     steps:
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
-      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 14
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Get the version from the tag and write to package.json if necessary
+      - name: Check package version
+        uses: technote-space/package-version-check-action@v1
+        with:
+          COMMIT_DISABLED: 1
+
       - run: npm install
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          tag: ${{ steps.get_version.outputs.VERSION }}
           access: "public"
