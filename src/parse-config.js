@@ -7,7 +7,7 @@ import path from "path";
 //  finds all the paths for relevant files 
 //  and creates relevant parser functions for 
 //  different file extensions
-export function parseConfig(config) {
+export default function parseConfig(config) {
   const {
     excludeDirectories,
     fileTypes,

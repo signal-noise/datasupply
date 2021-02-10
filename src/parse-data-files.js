@@ -3,7 +3,7 @@
 
 import YAML from "yaml";
 import fs from "fs";
-import { parseConfig } from "./parse-config.js";
+import parseConfig from "./parse-config.js";
 import path from "path";
 
 const defaultConfig = {
