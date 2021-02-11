@@ -1,14 +1,14 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --experimental-modules
 // supply-cmd
 // this is a command that allows a user to parse some dataflies based on some supplied config
 
 import * as fs from "fs";
 import * as path from "path";
 
-import { Command } from 'commander';
+import commander from 'commander';
 import parseDataFiles from "./parse-data-files.js";
 
-const program = new Command();
+const program = new commander.Command();
 program.option('-c, --config <configFileLocation>', 'the location of the Data Supply config file');
 program.version('0.0.1');
 program.parse(process.argv);

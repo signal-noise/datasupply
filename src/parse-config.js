@@ -1,5 +1,4 @@
-import * as dsv from "d3-dsv";
-
+import dsv from "d3-dsv";
 import getFilePaths from "./get-file-paths.js";
 import path from "path";
 
