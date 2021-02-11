@@ -4,7 +4,7 @@
 _Data supply_ will associates certain files together. If it finds a CSV it will look for a corespondingly named YAML file to provide infomration about that data.
 e.g. if __data supply__ finds `population.csv` it will look for `population.yml`.
 
-Metadata files might tell the you about the types of data columns
+Metadata files allow you to specify the types of data columns in your source data, as well as any other metadata your project might need to consume alongside the data.
 
 Continuing the previous example if a row of data in `population.csv` looks like this...
 ```json
