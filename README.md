@@ -6,11 +6,12 @@
 
 > ❗ Please note this project is under early active development and probably not suitable for use yet.
 
+Data supply supports NodeJS v12 and above.
 ## Why use Data Supply
 
-The __data supply__ toolset allows you to create a front end Javascript application for data visualisation and manipulation quickly and easily. Using __data supply__ will make it easier to spend time on the presentation of your data, by making predictable decisions in order to get your data from files to components.
+The __data supply__ toolset helps you to create a front end Javascript application for data visualisation and manipulation quickly and easily. Using __data supply__ will make it easier to spend time on the presentation of your data, by making predictable decisions in order to get your data from files to components.
 
-If you use Data Supply on many projects your display components will have more predictable, consistent interfaces, and will therefore be more reusable.
+If you use __data supply__ on many projects your display components will have more predictable, consistent interfaces, and will therefore be more reusable.
 
 ## What Data Supply is
 
