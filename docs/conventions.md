@@ -2,9 +2,9 @@
 
 ## Metadata
 _Data supply_ will associate certain files together. If it finds a source data file, it will look for a correspondingly named metadata file to provide information about that data.
-e.g. if __data supply__ finds `population.csv` it will look for `population.yml`.
+e.g. if __data supply__ finds `population.csv` it will look for `population.meta.json`.
 
-Metadata files allow you to specify the types of data columns in your source data, as well as any other metadata your project might need to consume alongside the data.
+Metadata files allow you to specify the types of data columns in your source data and extera parsing/ formatting information as well as any other metadata your project might need to consume alongside the data.
 
 Continuing the previous example if a row of data in `population.csv` looks like this...
 ```json

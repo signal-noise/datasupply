@@ -59,7 +59,7 @@ __data supply__ provides a CLI.
 
 Type `supply`.
 
-Starting at the place where you typed `supply` __data supply__ will visit all subdirectories find all CSV and TSV data files (and possibly YAML metadata files (c.f. [conventions](docs/conventions.md))) and convert them to JSON in using the standard array-of-objects format:
+Starting at the place where you typed `supply` __data supply__ will visit all subdirectories find all CSV and TSV data files (and possibly JSON metadata files named `THE_SAME_AS_THE_DATA_FILE.meta.json` c.f. [conventions](docs/conventions.md)) and convert them to a single JSON file in the standard array-of-objects format:
 
 ```json
 {
