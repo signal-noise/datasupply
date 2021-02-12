@@ -1,0 +1,43 @@
+{
+  "title": "UK Polling data",
+  "created": "2021-02-12T09:37:08.726Z",
+  "columns":[
+    {
+      "key":"Source",
+      "type":"String"
+    },
+    {
+      "key":"Error",
+      "type":"Number"
+    },
+    {
+      "key":"Survey End Date",
+      "type":"Date",
+      "parser":"%Y-%m-%d"
+    },
+    {
+      "key":"CON (%)",
+      "type":"Number"
+    },
+    {
+      "key":"LAB (%)",
+      "type":"Number"
+    },
+    {
+      "key":"LD (%)",
+      "type":"Number"
+    },
+    {
+      "key":"UKIP (%)",
+      "type":"Number"
+    },
+    {
+      "key":"GRN (%)",
+      "type":"Number"
+    },
+    {
+      "key":"Con Lead",
+      "type":"Number"
+    }    
+  ]
+}

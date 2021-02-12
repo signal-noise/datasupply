@@ -17,10 +17,10 @@ const defaultConfig = {
 
 function seekMetaData(filePath){
   const ext = path.extname(filePath);
-  const metaDataPath = filePath.replace(ext,'.yml');
+  const metaDataPath = filePath.replace(ext,'.meta.json');
   if(fs.existsSync(metaDataPath)){
-    const yml = YAML.parse(fs.readFileSync(metaDataPath,'utf-8'));
-    return yml;
+    const metaData= JSON.parse(fs.readFileSync(metaDataPath,'utf-8'));
+    return metaData;
   }
   return {};
 }
@@ -43,7 +43,7 @@ function parseFileList(fileList, parser){
     const metadata = seekMetaData(filePath);
     if(metadata !== undefined) {
       dataSets[name].metadata = metadata;
-      dataSets[name].metadata.__retrieved = new Date();
+      dataSets[name].metadata.retrieved = new Date();
     }
   });
   return dataSets;
