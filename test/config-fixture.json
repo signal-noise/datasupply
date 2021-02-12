@@ -1,0 +1,9 @@
+{
+  "dataSourceDirectories": ["."],
+  "outputDirectory": "example-output",
+  "excludeDirectories": [".next", "node_modules"],
+  "fileTypes": [
+    {"extension":"csv","delimiter":","},
+    {"extension":"tsv","delimiter":","}
+  ]
+}

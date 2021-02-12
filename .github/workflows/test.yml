@@ -18,7 +18,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [10, 12, 14]
+        node-version: [12, 14]
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
@@ -37,7 +37,8 @@ jobs:
 
       - name: Lint (Linux/Node v14 only)
         if: (matrix.os == 'ubuntu-latest') && matrix.node-version == 14
-        run: npm run check
+        run: npm run lint
 
       - name: Testing
+        if: (matrix.os != 'windows-latest')
         run: npm test -- --ci
