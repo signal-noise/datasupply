@@ -3,14 +3,14 @@ import getFilePaths from "./get-file-paths.js";
 import path from "path";
 
 // parse config takes a configuration object 
-//  finds all the paths for relevant files 
+//  finds all the paths for relevant files nvm
 //  and creates relevant parser functions for 
 //  different file extensions
 export default function parseConfig(config) {
   const {
     excludeDirectories,
     fileTypes,
-    targetDirectories
+    dataSourceDirectories
   } = config;
   // create filtering functions from the config object 
   const directoryFilter = (dirName) => !excludeDirectories.some(dir => dirName === dir);
@@ -34,7 +34,7 @@ export default function parseConfig(config) {
     });
   });
 
-  const fileLocations = getFilePaths(targetDirectories, extensionFilter, directoryFilter);
+  const fileLocations = getFilePaths(dataSourceDirectories, extensionFilter, directoryFilter);
 
   return { parsers, fileLocations };
 }

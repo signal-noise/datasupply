@@ -18,7 +18,7 @@ const options = program.opts();
 // files will be read and written relative to the path of the config file if one exists,
 // otherwise relative to the present working directory
 // (the place form which the script was invoked)
-let inputConfigPath = options.config ? options.config : './supply-config.json';
+let inputConfigPath = options.config ? options.config : './.datasupplyrc';
 
 let outputPath = '.';
 let configPath = path.join(process.env.PWD, inputConfigPath);
@@ -28,11 +28,14 @@ if(inputConfigPath && fs.existsSync(configPath)){
   config = JSON.parse(fs.readFileSync(configPath));
   outputPath = config.outputDirectory ? config.outputDirectory : '.';
 }else{
-  configPath = undefined;
+  configPath = process.env.PWD; // for the purpose of determining the output path the config path is the PWD
   console.warn('Data supply - Using default config');
 }
 
-// the config path is relative to the location of 1. the configuration file or if not then 2. the present working directory
+// the config path is relative to the location of 
+// 1. the configuration file or if not then 
+// 2. the present working directory
+
 outputPath = path.join(path.dirname(configPath), outputPath); 
 
 const dataSets = parseDataFiles(config);

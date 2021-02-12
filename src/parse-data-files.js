@@ -12,7 +12,7 @@ const defaultConfig = {
     {"extension": "csv", "delimiter": ","},
     {"extension": "tsv", "delimiter": "\t"}
   ],
-  targetDirectories: [process.env.PWD]
+  dataSourceDirectories: [process.env.PWD]
 }
 
 function seekMetaData(filePath){

@@ -1,5 +1,5 @@
 {
-  "targetDirectories": ["."],
+  "dataSourceDirectories": ["."],
   "outputDirectory": "example-output",
   "excludeDirectories": [".next", "node_modules"],
   "fileTypes": [

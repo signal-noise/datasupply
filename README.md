@@ -77,7 +77,7 @@ Starting at the place where you typed `supply` __data supply__ will visit all su
 }
 ```
 
-`supply` will look for a `supply-config.json` file in the location from which it was invoked. 
+`supply` will look for a `.datasupplyrc` file in the location from which it was invoked. 
 If it doesn't find one it runs with default options...
 ```json
 {
@@ -86,7 +86,7 @@ If it doesn't find one it runs with default options...
     {"extension": "csv", "delimiter": ","},
     {"extension": "tsv", "delimiter": "\t"}
   ],
-  "targetDirectories": ["."]
+  "dataSourceDirectories": ["."]
 }
 ```
 
@@ -95,7 +95,7 @@ To specify your own config file you can type `supply --config ./path/to/my/suppl
 Paths specified in supply-config files are relative to the location of that file so for example if in the config you set
 ```json
 {
-  "targetDirectories":["spreadsheet-stash", "/global-data"]
+  "dataSourceDirectories":["spreadsheet-stash", "/global-data"]
 }
 ```
 then the script will look to source data from `/path/to/the/config-file-directory/spreadsheet-stash`, `/global-data` and all their subdirectories.
