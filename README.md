@@ -1,6 +1,6 @@
 # Data Supply
 
-[![NPM version](https://img.shields.io/npm/v/@datasupply/datasupply.svg)](https://www.npmjs.com/package/@datasupply/datasupply) [![Actions Status](https://github.com/signal-noise/datasupply/workflows/Test%20and%20Lint/badge.svg)](https://github.com/signal-noise/datasupply/actions) [![NPM Downloads](https://img.shields.io/npm/dm/@datasupply/datasupply.svg)](https://npmcharts.com/compare/@datasupply/datasupply?minimal=true)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![NPM version](https://img.shields.io/npm/v/@datasupply/datasupply.svg)](https://www.npmjs.com/package/@datasupply/datasupply) [![Actions Status](https://github.com/signal-noise/datasupply/workflows/Test/badge.svg)](https://github.com/signal-noise/datasupply/actions) [![NPM Downloads](https://img.shields.io/npm/dm/@datasupply/datasupply.svg)](https://npmcharts.com/compare/@datasupply/datasupply?minimal=true)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --> [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Data Supply is an opinionated data processing, provision and presentation library of components for Javascript
 
