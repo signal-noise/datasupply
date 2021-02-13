@@ -1,4 +1,4 @@
-name: Test and Lint
+name: Test
 
 # Controls when the action will run.
 on:
@@ -34,10 +34,6 @@ jobs:
 
       - name: npm install
         run: npm install
-
-      - name: Lint (Linux/Node v14 only)
-        if: (matrix.os == 'ubuntu-latest') && matrix.node-version == 14
-        run: npm run lint
 
       - name: Testing
         if: (matrix.os != 'windows-latest')
