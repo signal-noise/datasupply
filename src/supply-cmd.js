@@ -29,15 +29,16 @@ if(inputConfigPath && fs.existsSync(configPath)){
   outputPath = config.outputDirectory ? config.outputDirectory : '.';
 }else{
   configPath = process.env.PWD; // for the purpose of determining the output path the config path is the PWD
-  console.warn('Data supply - Using default config');
+  console.warn('Data supply - Using default config', process.env.PWD);
 }
 
 // the config path is relative to the location of 
 // 1. the configuration file or if not then 
 // 2. the present working directory
-
-outputPath = path.join(path.dirname(configPath), outputPath); 
-
+if(!fs.lstatSync(configPath).isDirectory()){
+  configPath = path.dirname(configPath)
+}
+outputPath = path.join(configPath, outputPath); 
 const dataSets = parseDataFiles(config);
 
 Object.entries(dataSets).forEach(([basename, dataSet]) => {
