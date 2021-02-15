@@ -24,9 +24,9 @@ let outputPath = '.';
 let configPath = path.join(process.env.PWD, inputConfigPath);
 let config = undefined;
 
-if(inputConfigPath && fs.existsSync(configPath)){
+if(inputConfigPath && fs.existsSync(configPath)){ // if the specified file exists load it and get the output path
   config = JSON.parse(fs.readFileSync(configPath));
-  outputPath = config.outputDirectory ? config.outputDirectory : '.';
+  outputPath = config.outputDirectory ? config.outputDirectory : process.env.PWD;
 }else{
   configPath = process.env.PWD; // for the purpose of determining the output path the config path is the PWD
   console.warn('Data supply - Using default config', process.env.PWD);
