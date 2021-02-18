@@ -1,4 +1,4 @@
-name: Test
+name: Lint
 
 # Controls when the action will run.
 on:
@@ -14,12 +14,12 @@ env:
 
 jobs:
   test:
-    name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
+    name: Lint on node ${{ matrix.node-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [12, 14]
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [14]
+        os: [ubuntu-latest]
 
     steps:
       - uses: actions/checkout@v2
@@ -35,6 +35,6 @@ jobs:
       - name: npm install
         run: npm install
 
-      - name: Testing
-        if: (matrix.os != 'windows-latest')
-        run: npm test -- --ci
+      - name: Lint (Linux/Node v14 only)
+        if: (matrix.os == 'ubuntu-latest') && matrix.node-version == 14
+        run: npm run lint
