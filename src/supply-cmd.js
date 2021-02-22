@@ -1,4 +1,5 @@
-#!/usr/bin/env node --experimental-modules
+#!/usr/bin/env -S node --experimental-modules
+
 // supply-cmd
 // this is a command that allows a user to parse some dataflies based on some supplied config
 
