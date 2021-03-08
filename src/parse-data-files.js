@@ -1,7 +1,5 @@
 // parseDataFiles: loads a bunch of delimiter separated files from a set of directories and 
 // their subdirectories based on a config object. Those loaded files are
-
-import YAML from "yaml";
 import fs from "fs";
 import parseConfig from "./parse-config.js";
 import path from "path";
