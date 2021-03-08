@@ -1,4 +1,5 @@
 import groupBy from './groupBy.js';
+import utils from './utils.js';
 
 const transformers = { groupBy };
 
@@ -8,8 +9,9 @@ const transformers = { groupBy };
 // NOTE specifying order will matter as the transformations may be destructive 
 // and are applied "in place" 
 function transformList(data, list){
-  let transformedData = data;
-  list.map(args=>{
+  let transformedData = utils.clone(data);
+  utils.clone(list).map(suppliedArgs=>{
+    const args = [...suppliedArgs];
     const func = args.shift();
     return {func, args};
   })
