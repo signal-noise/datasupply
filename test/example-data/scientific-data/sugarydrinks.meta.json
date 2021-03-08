@@ -1,0 +1,25 @@
+{
+  "title": "How sugary are sugary drinks?",
+  "created": "2021-02-12T09:37:08.726Z",
+  "transforms":[
+    ["groupBy","Café"]
+  ],
+  "columns":[
+    {
+      "key":"Café",
+      "type":"String"
+    },
+    {
+      "key":"Drink",
+      "type":"String"
+    },
+    {
+      "key":"Sugars per serving (g)",
+      "type":"Number"
+    },
+    {
+      "key":"Teaspoons of sugar per serving",
+      "type":"Number"
+    }    
+  ]
+}

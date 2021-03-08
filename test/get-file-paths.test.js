@@ -4,7 +4,7 @@ const fixtureDataPath = './test/example-data';
 
 test('does it find all the files in "example-data"?', () => {
   const files = dataSupply.getFilePaths([fixtureDataPath]);
-  expect(files.length).toBe(8);
+  expect(files.length).toBe(9);
 });
 
 test('does it find all csv the files in "example-data"?', () => {
