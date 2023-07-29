@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "d3-dsv": "^2.0.0",
-    "yaml": "^1.10.0"
+    "yaml": "^1.10.2"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
